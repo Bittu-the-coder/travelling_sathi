@@ -18,7 +18,9 @@ export default function GenerateTrip() {
 
   // Initialize Google Generative AI
   const apiKey = process.env.GEMINI_API_KEY;
-  const genAI = new GoogleGenerativeAI(apiKey);
+  const genAI = new GoogleGenerativeAI(
+    "AIzaSyBFjIIxhkvWk35f3vOKCtO3IDklvOme3Q4"
+  );
   const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
   const GenerateAiTrip = async () => {
